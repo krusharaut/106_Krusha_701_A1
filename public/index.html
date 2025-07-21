@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Node JS</title>
+  </head>
+
+  <body>
+    <h1>Question 1</h1>
+    <button onclick="gethello()">Click to get Hello</button>
+    <p id="output"></p>
+    <script>
+      function gethello() {
+        fetch("/gethello")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("output").innerText = data;
+          })
+          .catch((err) => console.log("Error :", err));
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "krusha-string-tools",
+  "version": "1.0.0",
+  "description": "Question11",
+  "main": "que11.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Krusha",
+  "license": "ISC",
+  "dependencies": {
+    "krusha-string-tools": "^1.0.0"
+  }
+}
